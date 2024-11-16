@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.main {
+    /* background-color: pink; */
+    margin-left: 210px;
+    margin-top: 10px;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.main .focus {
+    /* background-color: skyblue; */
+    position: relative;
+    float: left;
+    height: 455px;
+    width: 730px;
+}
+
+.focus .prev,
+.focus .after {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.focus .prev {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.focus .prev::before {
+    font-family: 'icomoon';
+    content: '\e91f';
+    /* margin-left: 10px; */
+}
+
+.focus .after {
+    right: 9px;
+    border-radius: 15px 0 0 15px;
+}
+
+.focus .after::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.focus .focus_nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    height: 13px;
+    width: 70px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 6.5px;
+}
+
+.focus .focus_nav ul li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.focus .focus_nav ul .click {
+    background-color: #ff5000;
+}
+
+.main .newflash {
+    /* background-color: purple; */
+    float: right;
+    height: 455px;
+    width: 250px;
+}
+
+.newflash .news {
+    width: 250px;
+    height: 165px;
+    border: 1.5px solid #ccc;
+}
+
+.news .news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 16px;
+    color: #888;
+    font-weight: 700;
+    line-height: 33px;
+    margin-left: 15px;
+}
+
+.news_hd a {
+    float: right;
+    margin-right: 8px;
+    line-height: 33px;
+    color: #888;
+}
+
+.news_hd a::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.news_hd a:hover {
+    color: #ff5000;
+}
+
+.news_bd ul li {
+    margin-top: 6.5px;
+    margin-left: 15px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 限定只能一行文字 */
+    white-space: nowrap;
+    /* 超出显示省略号 */
+    text-overflow: ellipsis;
+}
+
+.news_bd ul li a {
+    font-size: 12px;
+}
+
+.newflash .lifeservice {
+    width: 250px;
+    height: 210px;
+    margin-bottom: 4px;
+    border: 1.5px solid #ccc;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    width: 62.5px;
+    height: 70px;
+    float: left;
+    border-bottom: 1.5px solid #ccc;
+    border-right: 1.5px solid #ccc;
+}
+
+.lifeservice ul li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 24px;
+    height: 28px;
+    /* background-color: pink; */
+    background: url(../image/icons.png) no-repeat -17px -15px;
+}
+
+.lifeservice ul li p {
+    margin-left: 18px;
+}
+
+.recom {
+    margin-top: 12px;
+    height: 165px;
+    /* background-color: pink; */
+}
+
+.recom .today_recom {
+    float: left;
+    height: 165px;
+    width: 205px;
+    background-color: #5c5251;
+}
+
+.recom .today_recom img {
+    margin-top: 38px;
+    margin-left: 65px;
+}
+
+.recom .shops {
+    padding-top: 1px;
+    padding-left: 2px;
+    float: left;
+    height: 165px;
+    width: 995px;
+    /* background-color: purple; */
+}
+
+.recom .shops li {
+    position: relative;
+    float: left;
+}
+
+/* 定位到从第三个往前的after伪元素 */
+.recom .shops li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 12.5px;
+    width: 1px;
+    height: 140px;
+    background-color: #ddd;
+}
+
+.jiadian .floor-hd {
+    height: 30px;
+    margin-top: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor-hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #c81623;
+}
+
+.floor-hd .tab_list ul li {
+    float: right;
+}
+
+.tab_list ul li a {
+    padding: 0 10px;
+}
+
+.floor-bd {
+    height: 360px;
+}
+
+.col-210 {
+    /* background-color: #c81623; */
+    background-color: #f9f9f9;
+    float: left;
+    width: 210px;
+    height: 100%;
+    text-align: center;
+}
+
+.col-210 ul {
+    padding-left: 5px;
+}
+
+.col-210 img {
+    margin-top: 18px;
+}
+
+.col-210 ul li {
+    float: left;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    width: 73px;
+    line-height: 30px;
+    margin: 0 12px;
+    text-align: center;
+}
+
+.col-330 {
+    /* background-color: #c81623; */
+    float: left;
+    width: 327px;
+    height: 100%;
+}
+
+.col-220 {
+    /* background-color: #c81623; */
+    float: left;
+    width: 221px;
+    height: 100%;
+}
+
+.col-220 img {
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}

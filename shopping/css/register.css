@@ -1,0 +1,136 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.header img {
+    padding-top: 15px;
+}
+
+.main {
+    height: 520px;
+    border: 1px solid #dfdfdf;
+    margin-top: 20px;
+}
+
+.main h3 {
+    background-color: #dfdfdf;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.main h3 p {
+    float: right;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main h3 p a {
+    color: #c81623;
+}
+
+.regist-form {
+    width: 600px;
+    margin: 50px auto;
+    /* background-color: pink; */
+    height: 35px;
+    line-height: 35px;
+}
+
+.regist-form .form-name {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.regist-form .inp {
+    width: 240px;
+    height: 35px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.regist-form .error i {
+    display: inline-block;
+    /* 让i居中 */
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../image/error.png) no-repeat;
+}
+
+.regist-form .error {
+    color: #df3033;
+}
+
+.regist-form .success i {
+    display: inline-block;
+    /* 让i居中 */
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../image/success.png) no-repeat;
+}
+
+.regist-form .success {
+    color: #40b83f;
+}
+
+.regist-form ul li {
+    margin-bottom: 20px;
+}
+
+.agree {
+    margin-left: 95px;
+}
+
+.agree input {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.btn {
+    background-color: #c81623;
+    width: 195px;
+    height: 33px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 120px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+    /* background-color: #fff */
+}
+
+.mod_copyright a {
+    padding: 0 10px;
+}
+
+.mod_copyright .copyright {
+    padding-top: 5px;
+}
